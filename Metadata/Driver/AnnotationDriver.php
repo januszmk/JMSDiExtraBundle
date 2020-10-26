@@ -267,6 +267,6 @@ class AnnotationDriver implements DriverInterface
             return false;
         }
 
-        return $type->isBuiltin() && in_array((string) $type, array('string', 'int', 'bool', 'array'), true);
+        return $type->isBuiltin() && in_array($type->getName(), array('string', 'int', 'bool', 'array'), true);
     }
 }
